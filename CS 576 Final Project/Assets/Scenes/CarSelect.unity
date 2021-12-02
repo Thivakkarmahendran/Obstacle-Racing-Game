@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 103982619}
   - component: {fileID: 103982618}
   - component: {fileID: 103982617}
+  - component: {fileID: 103982620}
   m_Layer: 5
   m_Name: NormalCarBtn
   m_TagString: Untagged
@@ -284,7 +285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 103982618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 103982620}
+        m_TargetAssemblyTypeName: SelectCar, Assembly-CSharp
+        m_MethodName: chooseCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &103982618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +336,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103982615}
   m_CullTransparentMesh: 1
+--- !u!114 &103982620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103982615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ee91bf654914436ba88da6c7492f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491320914
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +439,7 @@ GameObject:
   - component: {fileID: 607732035}
   - component: {fileID: 607732034}
   - component: {fileID: 607732033}
+  - component: {fileID: 607732037}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -507,6 +533,18 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: 23}
   m_SizeDelta: {x: 800, y: 516.2761}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &607732037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607732032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4b52e3818674646a330f783cafa69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &855522433
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +557,7 @@ GameObject:
   - component: {fileID: 855522437}
   - component: {fileID: 855522436}
   - component: {fileID: 855522435}
+  - component: {fileID: 855522438}
   m_Layer: 5
   m_Name: BigCarBtn
   m_TagString: Untagged
@@ -589,7 +628,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 855522436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 855522438}
+        m_TargetAssemblyTypeName: SelectCar, Assembly-CSharp
+        m_MethodName: chooseCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &855522436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +679,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855522433}
   m_CullTransparentMesh: 1
+--- !u!114 &855522438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855522433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ee91bf654914436ba88da6c7492f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &904744240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1089,7 @@ GameObject:
   - component: {fileID: 1215829157}
   - component: {fileID: 1215829156}
   - component: {fileID: 1215829155}
+  - component: {fileID: 1215829158}
   m_Layer: 5
   m_Name: ReturnToMenu
   m_TagString: Untagged
@@ -1074,7 +1138,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1096,7 +1160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1215829156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1215829158}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: SwapScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1215829156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,6 +1211,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215829153}
   m_CullTransparentMesh: 1
+--- !u!114 &1215829158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215829153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9fb6a6cdc424093a18fd5b2f64bf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1234753894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1522,6 +1610,7 @@ GameObject:
   - component: {fileID: 1958181551}
   - component: {fileID: 1958181550}
   - component: {fileID: 1958181549}
+  - component: {fileID: 1958181552}
   m_Layer: 5
   m_Name: SmallCarBtn
   m_TagString: Untagged
@@ -1592,7 +1681,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1958181550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1958181552}
+        m_TargetAssemblyTypeName: SelectCar, Assembly-CSharp
+        m_MethodName: chooseCar
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958181550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,3 +1732,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958181547}
   m_CullTransparentMesh: 1
+--- !u!114 &1958181552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958181547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ee91bf654914436ba88da6c7492f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

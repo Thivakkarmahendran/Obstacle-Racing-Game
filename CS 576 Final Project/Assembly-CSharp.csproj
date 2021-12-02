@@ -37,6 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\SelectCar.cs" />
+     <Compile Include="Assets\Scripts\CarRotation.cs" />
+     <Compile Include="Assets\Scripts\SelectStage.cs" />
      <None Include="Assets\Textures\Downloads\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
