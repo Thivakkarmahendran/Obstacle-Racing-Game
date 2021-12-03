@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\SelectCar.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+     <Compile Include="Assets\Scripts\WreckingBallScript.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
