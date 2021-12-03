@@ -22,103 +22,103 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57202
+60164
 Successfully changed project path to: /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project
 /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Assets
 GfxDevice: creating device client; threaded=0
-2021-12-02 11:48:17.062 Unity[39034:1760439] Color LCD preferred device: Intel Iris Pro Graphics (low power)
-2021-12-02 11:48:17.062 Unity[39034:1760439] Metal devices available: 1
-2021-12-02 11:48:17.062 Unity[39034:1760439] 0: Intel Iris Pro Graphics (low power)
-2021-12-02 11:48:17.063 Unity[39034:1760439] Using device Intel Iris Pro Graphics (low power)
+2021-12-03 09:37:32.015 Unity[44128:1948515] Color LCD preferred device: Intel Iris Pro Graphics (low power)
+2021-12-03 09:37:32.015 Unity[44128:1948515] Metal devices available: 1
+2021-12-03 09:37:32.015 Unity[44128:1948515] 0: Intel Iris Pro Graphics (low power)
+2021-12-03 09:37:32.016 Unity[44128:1948515] Using device Intel Iris Pro Graphics (low power)
 Initializing Metal device caps: Intel Iris Pro Graphics
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56034
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003113 seconds.
+Registered in 0.014510 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 44.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 42.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.144 seconds
+- Completed reload, in  2.247 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2144ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (2248ms)
+		BeginReloadAssembly (69ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (680ms)
-			LoadAssemblies (70ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (776ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
+			SetupTypeCache (287ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (267ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (252ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (154ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007031 seconds.
+Registered in 0.010174 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.783 seconds
+- Completed reload, in  1.736 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1784ms)
-		BeginReloadAssembly (246ms)
+	ReloadAssembly (1951ms)
+		BeginReloadAssembly (456ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1429ms)
-			LoadAssemblies (141ms)
+		EndReloadAssembly (1400ms)
+			LoadAssemblies (127ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (487ms)
+			SetupTypeCache (463ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (551ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (547ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (458ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (456ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.013663 seconds.
+Validating Project structure ... 0.015463 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.025763 seconds.
+Upgrading shader files ...0.026430 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -147,21 +147,21 @@ Initializing Unity extensions:
 [C# Project]   007: EndProject
 [C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI.Tests", "UnityEngine.UI.Tests.csproj", "{2C2A6A8A-A1E6-3969-9BDD-9E1D3D0D69B7}"
 [C# Project] Writing /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Assembly-CSharp.csproj because it has changed
-[C# Project] First difference on line 667
+[C# Project] First difference on line 668
 
 [C# Project] Current /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Assembly-CSharp.csproj:
-[C# Project]   667:  <Reference Include="Unity.VSCode.Editor">
-[C# Project]   668:  <HintPath>/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-[C# Project]   669:  </Reference>
-[C# Project]   670:  <Reference Include="Unity.TextMeshPro.Editor">
-[C# Project]   671:  <HintPath>/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+[C# Project]   668:  <Reference Include="Unity.VSCode.Editor">
+[C# Project]   669:  <HintPath>/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+[C# Project]   670:  </Reference>
+[C# Project]   671:  <Reference Include="Unity.TextMeshPro.Editor">
+[C# Project]   672:  <HintPath>/Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
 
 [C# Project] New /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Assembly-CSharp.csproj:
-[C# Project]   667:   </ItemGroup>
-[C# Project]   668:   <ItemGroup>
-[C# Project]   669:     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-[C# Project]   670:       <Project>{BC87E6EA-EF89-22B0-6493-876EFAA49195}</Project>
-[C# Project]   671:       <Name>Unity.VSCode.Editor</Name>
+[C# Project]   668:   </ItemGroup>
+[C# Project]   669:   <ItemGroup>
+[C# Project]   670:     <ProjectReference Include="Unity.VSCode.Editor.csproj">
+[C# Project]   671:       <Project>{BC87E6EA-EF89-22B0-6493-876EFAA49195}</Project>
+[C# Project]   672:       <Name>Unity.VSCode.Editor</Name>
 [C# Project] Writing /Users/thivakkarmahendran/Documents/Sudhan/College/Grad school/Fall 2021/CS 576/Final Project/CS-576-Final-Project/CS 576 Final Project/Assembly-CSharp-Editor.csproj because it has changed
 [C# Project] First difference on line 645
 
@@ -180,14 +180,14 @@ Initializing Unity extensions:
 [C# Project]   649:       <Name>Assembly-CSharp</Name>
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1442 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.3 MB.
-System memory in use after: 187.2 MB.
+Unloading 1443 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.1 MB.
+System memory in use after: 188.0 MB.
 
-Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 1945.
-Total: 4.823092 ms (FindLiveObjects: 0.334042 ms CreateObjectMapping: 0.110492 ms MarkObjects: 4.113795 ms  DeleteObjects: 0.262704 ms)
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 1946.
+Total: 4.026679 ms (FindLiveObjects: 0.243264 ms CreateObjectMapping: 0.062431 ms MarkObjects: 3.485442 ms  DeleteObjects: 0.234554 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -201,72 +201,248 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Race Track 2.unity
-  artifactKey: Guid(bb1bea670c23b41a892132db2fc3e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Race Track 2.unity using Guid(bb1bea670c23b41a892132db2fc3e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274ac8009776c74ecca73e44cf74bbc0') in 0.013489 seconds 
-  Import took 0.018008 seconds .
+  path: Assets/Textures/Waterfall.png
+  artifactKey: Guid(d08509467b8154e048038afe88c900d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Waterfall.png using Guid(d08509467b8154e048038afe88c900d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37d7f6e1a47491eec41ee5b49b56303') in 1.158202 seconds 
+  Import took 1.164237 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/Scenes/CarSelect.unity
-  artifactKey: Guid(e986602072ddb44ec86c195a368c6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CarSelect.unity using Guid(e986602072ddb44ec86c195a368c6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fb58d4fbd5d44396c5938669c9356c') in 0.001535 seconds 
-  Import took 0.004399 seconds .
+  Time since last request: 35.569545 seconds.
+  path: Assets/Textures/waterfall Image.png
+  artifactKey: Guid(5992675751cb54408a416f333962c142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/waterfall Image.png using Guid(5992675751cb54408a416f333962c142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67fec5fe9f43822fbc1036f891865de9') in 0.075623 seconds 
+  Import took 0.080970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 588.337994 seconds.
+  path: Assets/Textures/Water.mat
+  artifactKey: Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Water.mat using Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd36748259a0f2a8fc4e7b7304583eba') in 1.508825 seconds 
+  Import took 1.528313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.546607 seconds.
+  path: Assets/Textures/Waterfall.mat
+  artifactKey: Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Waterfall.mat using Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46e34d1dfd420b9d7a5c631d4cb3b6d') in 0.098624 seconds 
+  Import took 0.103099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.179700 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(951aab9a19f551f4385d0ceafdaf19b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards.tga using Guid(951aab9a19f551f4385d0ceafdaf19b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c473b7a14fa4af9b7094da2ab39d6f7') in 13.654845 seconds 
+  Import took 13.659074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004946 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(0ec79c3d1dd0fb640b7f3f72ebb28f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Billboards_Normal.tga using Guid(0ec79c3d1dd0fb640b7f3f72ebb28f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89414d1d1d0e0ad80185a4f41361c725') in 0.259213 seconds 
+  Import took 0.262611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000617 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(d954891cb9e58434d86e01d839ed4997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Specular.tga using Guid(d954891cb9e58434d86e01d839ed4997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6928931d97367bdef4eadea35f85a2fc') in 0.163036 seconds 
+  Import took 0.168629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga
+  artifactKey: Guid(ea9799c461d3f6e4eb0be2264829282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas.tga using Guid(ea9799c461d3f6e4eb0be2264829282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50015aac38bc4faa7aeca743d6d5468a') in 0.012210 seconds 
+  Import took 0.016819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga
+  artifactKey: Guid(bc6e7e1374ff3e1459f65bf72da64c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas_Billboards.tga using Guid(bc6e7e1374ff3e1459f65bf72da64c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc178e2c9f3e983812d7f9cfccd7848f') in 0.024161 seconds 
+  Import took 0.027104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(b552931caa1b3ea418b9ba90cbd1333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop_Atlas_Normal.tga using Guid(b552931caa1b3ea418b9ba90cbd1333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5748bb7d04ab0adda0d8ecea9ecf299') in 0.010757 seconds 
+  Import took 0.013678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga
+  artifactKey: Guid(2c116325e19b8a04d916864cc540ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Mobile_Atlas.tga using Guid(2c116325e19b8a04d916864cc540ec2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd642ea6ff98d1a6eb9e799cf0284486c') in 0.009103 seconds 
+  Import took 0.011687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp
+  artifactKey: Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyAlbedoSpecular.bmp using Guid(ef5c51cfa2ce46043a41a376b560c525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1239ab112aa81995d4c4500a4aecff96') in 9.262971 seconds 
+  Import took 9.266320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005071 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd
+  artifactKey: Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd using Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3abfcdd55243656b1b5a3cf365a637') in 12.586440 seconds 
+  Import took 12.590549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005177 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp
+  artifactKey: Guid(58a059b07b093a745b47c2191525ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/MudRockyNormals.bmp using Guid(58a059b07b093a745b47c2191525ddce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928f267ea0efdd357039e602275cd610') in 0.022669 seconds 
+  Import took 0.026049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd
+  artifactKey: Guid(047330f39d11745ad0004adb8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd using Guid(047330f39d11745ad0004adb8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b975ec0133f644767281a4574390805') in 0.008071 seconds 
+  Import took 0.011123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga
+  artifactKey: Guid(612b65e0cd1576e4bbba0516d756a99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards.tga using Guid(612b65e0cd1576e4bbba0516d756a99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c2d5f35643ea88f3c383c636d86fab') in 0.009818 seconds 
+  Import took 0.012226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNormals.jpg
+  artifactKey: Guid(a53cf5449d11a15d1100a04b44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNormals.jpg using Guid(a53cf5449d11a15d1100a04b44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2081253472018e433aca7dc10f9287') in 1.452041 seconds 
+  Import took 1.455244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004927 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd
+  artifactKey: Guid(440eb36db91ca410f800ff3cfe43572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassRockyAlbedo.psd using Guid(440eb36db91ca410f800ff3cfe43572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9efdf606172ace3dcf350bdd83ae2c8') in 0.021932 seconds 
+  Import took 0.026043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd
+  artifactKey: Guid(2c528fec5d95e4ac28cf46399b887662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond01AlbedoAlpha.psd using Guid(2c528fec5d95e4ac28cf46399b887662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3dab175c6c8190ba2b3672a4d6a24b') in 0.011107 seconds 
+  Import took 0.014113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd
+  artifactKey: Guid(ab97f9ab7c2ce724ebc9446060a819a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd using Guid(ab97f9ab7c2ce724ebc9446060a819a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4397236e03d3cae080d312bedef9942') in 0.007910 seconds 
+  Import took 0.010498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd
+  artifactKey: Guid(d6cdc79ec19714fcd980ca3f6ac01a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/BillboardTextures/GrassFrond02AlbedoAlpha.psd using Guid(d6cdc79ec19714fcd980ca3f6ac01a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f74791a6b1fb754ce993a1e47f4aad2') in 0.108260 seconds 
+  Import took 0.113798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001790 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga
+  artifactKey: Guid(855926cb3532dc14c87b1e6d589334b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Normal.tga using Guid(855926cb3532dc14c87b1e6d589334b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0a63eafd1539c4214fefe867107e2a') in 0.017494 seconds 
+  Import took 0.021789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterFresnel.psd
+  artifactKey: Guid(5b5c5575fd4c74abd9f7b30862fb76a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterFresnel.psd using Guid(5b5c5575fd4c74abd9f7b30862fb76a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279f878cf298614ed6b0012f1c148e8d') in 0.009294 seconds 
+  Import took 0.012107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd
+  artifactKey: Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/TerrainAssets/SurfaceTextures/GrassHillAlbedo.psd using Guid(c6e0767b1f8c34890ac245217f4b9731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c60089bc42f03ae1551a7d7960a11f8') in 0.011044 seconds 
+  Import took 0.014227 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000317 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(6b7fb58788a4d4d1dbee0d845c07adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(6b7fb58788a4d4d1dbee0d845c07adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2c8f9ca7ad50d0ffb18f2c8e3b23c1') in 0.003023 seconds 
-  Import took 0.011642 seconds .
+  path: Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd
+  artifactKey: Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd using Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c1f2abbbd7bbc0f006cbe35019223f') in 0.090528 seconds 
+  Import took 0.095333 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000833 seconds.
-  path: Assets/Scenes/Leaderboard.unity
-  artifactKey: Guid(dae41157fe2304bad8f7ffb6f07b7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Leaderboard.unity using Guid(dae41157fe2304bad8f7ffb6f07b7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b39ace6ce602f0156661ec452967ba') in 0.002521 seconds 
-  Import took 0.006966 seconds .
+  Time since last request: 0.000369 seconds.
+  path: Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterBump.jpg
+  artifactKey: Guid(2dd3788f8589b40bf82a92d76ffc5091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/Water/Water/Textures/WaterBump.jpg using Guid(2dd3788f8589b40bf82a92d76ffc5091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065731616c3ec36f865693e1a49a233a') in 0.019262 seconds 
+  Import took 0.023435 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Scenes/StageSelect.unity
-  artifactKey: Guid(9281e7c6eee664d36aa666e8a42c69e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StageSelect.unity using Guid(9281e7c6eee664d36aa666e8a42c69e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2923247dce3619283ec725ed2b3a9bd6') in 0.002225 seconds 
-  Import took 0.005988 seconds .
+  Time since last request: 0.000292 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga
+  artifactKey: Guid(897461e3c2fa9d84d8bd48bf1b00a950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Dekstop_Spec.tga using Guid(897461e3c2fa9d84d8bd48bf1b00a950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d7b45cfabdc3c0466656de100c73aa') in 0.011305 seconds 
+  Import took 0.013980 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.308108 seconds.
-  path: Assets/Scenes/MainMenu
-  artifactKey: Guid(39ec65932f8f346c7b3fc35f449b6d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu using Guid(39ec65932f8f346c7b3fc35f449b6d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa00947b6e7e4d375883404b14b31e5b') in 0.001514 seconds 
-  Import took 0.007059 seconds .
+  Time since last request: 0.000375 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga
+  artifactKey: Guid(41232aac50fb25a40b390906295f9aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Specular.tga using Guid(41232aac50fb25a40b390906295f9aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211c110b24e2c4f255bad99b0160ff86') in 0.015758 seconds 
+  Import took 0.018458 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000972 seconds.
-  path: Assets/Scenes/MainMenu
-  artifactKey: Guid(39ec65932f8f346c7b3fc35f449b6d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu using Guid(39ec65932f8f346c7b3fc35f449b6d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa00947b6e7e4d375883404b14b31e5b') in 0.001131 seconds 
-  Import took 0.004479 seconds .
+  Time since last request: 0.000271 seconds.
+  path: Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga using Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fbf009a83566a3d5c260e0a4357060') in 0.086800 seconds 
+  Import took 0.091094 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.077981 seconds.
-  path: Assets/Scenes/MainMenu/LightingData.asset
-  artifactKey: Guid(dfdca5be916d5484bbad6308f030e354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu/LightingData.asset using Guid(dfdca5be916d5484bbad6308f030e354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0cb98a5dd86982c0450a101a2011334') in 1.295145 seconds 
-  Import took 1.299159 seconds .
+  Time since last request: 0.000854 seconds.
+  path: Assets/Packages/ARCADE - FREE Racing Car/Textures/Free_Car_Texture_Atlas.png
+  artifactKey: Guid(8c508eea1762dd44cbf66593e03a6b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARCADE - FREE Racing Car/Textures/Free_Car_Texture_Atlas.png using Guid(8c508eea1762dd44cbf66593e03a6b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174c8ac0ff4d65c3f59184366afac03b') in 0.016500 seconds 
+  Import took 0.020974 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004409 seconds.
-  path: Assets/Scenes/MainMenu/ReflectionProbe-0.exr
-  artifactKey: Guid(f414208ce1a3a48c2803a0963ec34e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu/ReflectionProbe-0.exr using Guid(f414208ce1a3a48c2803a0963ec34e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64d61ea8e1b9b6ee2ffef54109888a9') in 1.443274 seconds 
-  Import took 1.446439 seconds .
+  Time since last request: 7.859465 seconds.
+  path: Assets/Textures/Waterfall.mat
+  artifactKey: Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Waterfall.mat using Guid(71494a687df6f4f61a47ce1575dc4406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c7338f43460ef11fc04022a73c5eff') in 0.103119 seconds 
+  Import took 0.107292 seconds .
 
