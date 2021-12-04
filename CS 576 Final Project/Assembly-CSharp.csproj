@@ -36,11 +36,55 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ChangeScene.cs" />
-     <Compile Include="Assets\Scripts\SelectCar.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
      <Compile Include="Assets\Scripts\CarRotation.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Scripts\SelectStage.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Scripts\terrainScipt.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Scripts\boulderScipt.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Scripts\SelectCar.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
+     <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Scripts\OpenCloseRules.cs" />
      <None Include="Assets\Textures\Downloads\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+     <None Include="Assets\Packages\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Packages\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\Packages\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Packages\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Packages\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
+     <None Include="Assets\Packages\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+     <None Include="Assets\Packages\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -643,10 +687,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5075438f-b1d6-ed90-8b26-afd672ec5746}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
