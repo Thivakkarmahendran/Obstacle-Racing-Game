@@ -16456,7 +16456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_AngleLimits.m_UpperAngle
-      value: 60
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
