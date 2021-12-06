@@ -40,6 +40,13 @@ public class CarController : MonoBehaviour
     public Transform respawnpoint;
     public bool stealth = false;
     Material m_Material;
+    private AudioSource audios;
+    public AudioClip music_drive;
+    public AudioClip music_powerup;
+    void Awake()
+    {
+        audios = GetComponent<AudioSource>();
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -66,6 +73,11 @@ public class CarController : MonoBehaviour
             HandleMotor();
             HandleSteering();
             UpdateWheels();
+            if (rb.velocity.magnitude >1)
+            {
+                audios.clip = music_drive;
+                audios.PlayOneShot(audios.clip, 1);
+            }
         }
     }
 
@@ -77,6 +89,7 @@ public class CarController : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             verticalInput = -1;
+
         }
         else
         {
@@ -143,6 +156,8 @@ public class CarController : MonoBehaviour
     {
         if (powerup == true)
         {
+            audios.clip = music_powerup;
+            audios.PlayOneShot(audios.clip, 1);
             if (timestar > 0)
             {
                 motorForce = 100f;
