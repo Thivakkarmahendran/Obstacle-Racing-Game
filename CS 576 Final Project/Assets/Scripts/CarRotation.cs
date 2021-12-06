@@ -19,8 +19,8 @@ public class CarRotation : MonoBehaviour
     void Update()
     {
         
-        car1.transform.Rotate(0, -1 * 100 * Time.deltaTime, 0);
-        car2.transform.Rotate(0, -1 * 100 * Time.deltaTime, 0);
-        car3.transform.Rotate(0, -1 * 100 * Time.deltaTime, 0);
+        car1.transform.Rotate(0, -1 * 30 * Time.deltaTime, 0);
+        car2.transform.Rotate(0, -1 * 30 * Time.deltaTime, 0);
+        car3.transform.Rotate(0, -1 * 30 * Time.deltaTime, 0);
     }
 }
