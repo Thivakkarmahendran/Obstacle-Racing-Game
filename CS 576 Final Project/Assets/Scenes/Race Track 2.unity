@@ -12668,7 +12668,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 741823229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d3104fd17e04a6c8ee7296201e7d57, type: 3}
+  m_Script: {fileID: 11500000, guid: c495b387e918b6240b1007ed9ff8a3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &761261865 stripped
@@ -12971,6 +12971,8 @@ MonoBehaviour:
   gethit: 0
   respawnpoint: {fileID: 176359670}
   stealth: 0
+  music_drive: {fileID: 8300000, guid: 9c6f669418ea4854a8e67fbb8b7585d8, type: 3}
+  music_powerup: {fileID: 8300000, guid: 5954b05772043cd4dbb6a015b5819c18, type: 3}
 --- !u!1001 &843143612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16208,24 +16210,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1722493393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb312fa2e15374a3ea469a8e8161ecd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bf9d7d48e2f6d64898f866cbc33e59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1722493396}
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0.06333399, a: 1}
-    key1: {r: 0.95533115, g: 0.990566, b: 0.04360973, a: 1}
+    key1: {r: 0.9236501, g: 0.972549, b: 0, a: 1}
     key2: {r: 0, g: 0.9716981, b: 0.05188223, a: 1}
-    key3: {r: 0, g: 0.9716981, b: 0.05188223, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21823
-    ctime1: 43646
+    ctime0: 22166
+    ctime1: 43754
     ctime2: 65535
-    ctime3: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
