@@ -13,6 +13,7 @@ public class CarController : MonoBehaviour
     private float currentSteerAngle;
     private float currentbreakForce;
     private bool isBreaking;
+    private float cmass = -0.9f;
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
@@ -28,6 +29,11 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform rearLeftWheelTransform;
     [SerializeField] private Transform rearRightWheelTransform;
 
+    void Start()
+    {       
+        GetComponent<Rigidbody>().centerOfMass = new Vector3(0f, cmass, 0f);        
+    }
+    
     private void FixedUpdate()
     {
         GetInput();
@@ -78,8 +84,8 @@ public class CarController : MonoBehaviour
     private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
     {
         Vector3 pos;
-        Quaternion rot
-;       wheelCollider.GetWorldPose(out pos, out rot);
+        Quaternion rot;
+        wheelCollider.GetWorldPose(out pos, out rot);
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
     }
