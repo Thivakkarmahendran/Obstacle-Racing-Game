@@ -5,6 +5,10 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour{
 
         private void OnTriggerEnter(Collider other){
-         checkpointTracker.checkPointReached(gameObject.name);
+         
+         if(other.name.Equals("Body")){
+                checkpointTracker.checkPointReached(gameObject.name);
+         }
+         
         }
 }
