@@ -6,10 +6,12 @@ public class terrainScipt : MonoBehaviour
 {
 
     public GameObject boulderPrefab;
+    public static bool spawnBoulder;
 
     // Start is called before the first frame update
     void Start()
     {
+        spawnBoulder = true;
         StartCoroutine(SpawnBoulder());
     }
 
@@ -20,7 +22,7 @@ public class terrainScipt : MonoBehaviour
     }
 
     private IEnumerator SpawnBoulder() {
-        while(true) {
+        while(spawnBoulder) {
             Instantiate(boulderPrefab, new Vector3(Random.Range(760f, 780f), 200f,  Random.Range(200f, 750f)), Quaternion.identity);
             yield return new WaitForSeconds(2);
         }

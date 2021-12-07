@@ -12,7 +12,6 @@ public class RaceSystem : MonoBehaviour
     float startTime;
     float elapsedTime;
     public bool crossed_front;
-    public bool crossed_midpoint;
     
 
     void Start()
@@ -22,7 +21,6 @@ public class RaceSystem : MonoBehaviour
         startTime = Time.time;
         elapsedTime = 0;
         crossed_front = false;
-        crossed_midpoint = false;
         lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
         lapTime.text = "00:00:00";
 
@@ -34,11 +32,12 @@ public class RaceSystem : MonoBehaviour
         elapsedTime = Time.time - startTime;
         Vector3 newTime = convertTime(elapsedTime);
         lapTime.text = newTime[0].ToString("00") + ":" + newTime[1].ToString("00") + ":" + newTime[2].ToString("00");
-        if(crossed_front){
+        
+        if(crossed_front && checkpointTracker.reachedAllCheckpoints()){
             currentLap += 1;
             crossed_front = false;
-            crossed_midpoint = false;
             lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
+            checkpointTracker.restartAllCheckpoints();
         }
 
     }
