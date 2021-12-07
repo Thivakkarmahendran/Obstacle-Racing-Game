@@ -24,12 +24,13 @@ public class CarController : MonoBehaviour
 
     public float maxSteeringAngle = 30f;
     public float motorForce = 50f;
-    public float brakeForce = 0f;
+    public float brakeForce = 20f;
+    public float max_speed = 100f;
     public bool powerup = false;
     public bool slow = false;
     private float timestar = 5;
     public bool bigger = false;
-    public bool smaller = true;
+    public bool smaller = false;
     Vector3 original_size;
     BoxCollider car_collider;
     private float car_mass;
@@ -43,6 +44,9 @@ public class CarController : MonoBehaviour
     private AudioSource audios;
     public AudioClip music_drive;
     public AudioClip music_powerup;
+    public AudioClip music_powerdown;
+    public AudioClip music_big;
+    public AudioClip music_small;
     void Awake()
     {
         audios = GetComponent<AudioSource>();
@@ -73,18 +77,21 @@ public class CarController : MonoBehaviour
             HandleMotor();
             HandleSteering();
             UpdateWheels();
-            if (rb.velocity.magnitude >1)
-            {
-                audios.clip = music_drive;
-                audios.PlayOneShot(audios.clip, 1);
-            }
         }
     }
 
     private void GetInput()
     {
         if (Input.GetKey(KeyCode.UpArrow)){
-            verticalInput = 1;
+            if (rb.velocity.x >= 0 && rb.velocity.magnitude >= max_speed)
+            {
+            }
+            else
+            {
+                verticalInput = 1;
+                audios.clip = music_drive;
+                audios.PlayOneShot(audios.clip, 1);
+            }
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -176,6 +183,8 @@ public class CarController : MonoBehaviour
     {
         if (slow == true)
         {
+            audios.clip = music_powerdown;
+            audios.PlayOneShot(audios.clip, 1);
             if (timestar > 0)
             {
                 motorForce = 25f;
@@ -194,6 +203,8 @@ public class CarController : MonoBehaviour
     {
         if (bigger == true)
         {
+            audios.clip = music_big;
+            audios.PlayOneShot(audios.clip, 1);
             if (timestar > 0)
             {
                 
@@ -217,6 +228,8 @@ public class CarController : MonoBehaviour
     {
         if (smaller == true)
         {
+            audios.clip = music_small;
+            audios.PlayOneShot(audios.clip, 1);
             if (timestar > 0)
             {
                 transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -268,8 +281,8 @@ public class CarController : MonoBehaviour
             System.Threading.Thread.Sleep(1000);
             currentHealth = maxHealth;
             healthBar.SetHealth(currentHealth);
-            Debug.Log(currentHealth);
             transform.position = respawnpoint.transform.position;
+            Physics.SyncTransforms();
         }
     }
 
@@ -298,6 +311,14 @@ public class CarController : MonoBehaviour
                 car_collider.enabled = true;
                 timestar = 5;
             }
+        }
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Respawn"))
+        {
+            GameObject child = other.transform.GetChild(0).gameObject;
+            respawnpoint.transform.position = child.transform.position;
         }
     }
 }
