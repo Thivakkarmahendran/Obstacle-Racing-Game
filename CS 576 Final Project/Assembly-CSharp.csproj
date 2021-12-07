@@ -42,6 +42,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
      <Compile Include="Assets\Scripts\CarRotation.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Scripts\RaceSystem.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
@@ -82,8 +83,8 @@
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
-     <Compile Include="Assets\Scripts\RaceSystem.cs" />
      <Compile Include="Assets\Scripts\FinishLine.cs" />
+     <Compile Include="Assets\Scripts\Unpause.cs" />
      <None Include="Assets\Textures\Downloads\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Packages\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
