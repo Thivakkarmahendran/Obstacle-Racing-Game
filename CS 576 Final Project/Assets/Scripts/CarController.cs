@@ -37,7 +37,7 @@ public class CarController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-    public bool gethit = false;
+    public bool gethit = true;
     public Transform respawnpoint;
     public bool stealth = false;
     Material m_Material;
@@ -61,10 +61,11 @@ public class CarController : MonoBehaviour
         car_collider = GetComponent<BoxCollider>();
         original_size = car_collider.size;        
         m_Material = GetComponent<Renderer>().material;
+        gethit = true;
     }
     private void FixedUpdate()
     {
-        Hit();
+        //Hit(); - not sure
         Check_Death();
         if(currentHealth > 0)
         {
@@ -261,16 +262,17 @@ public class CarController : MonoBehaviour
                 transform.position = respawnpoint.transform.position;
             }
         }
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
             gethit = false;
         }
+        */
 
         void TakeDamage(int damage)
         {
             currentHealth -= damage;
-
             healthBar.SetHealth(currentHealth);
         }
     }
@@ -321,4 +323,5 @@ public class CarController : MonoBehaviour
             respawnpoint.transform.position = child.transform.position;
         }
     }
+
 }
