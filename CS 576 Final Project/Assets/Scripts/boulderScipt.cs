@@ -7,6 +7,7 @@ public class boulderScipt : MonoBehaviour
 
     public float speed = 2;
     private Rigidbody rb;
+    public GameObject carGameObject;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +30,16 @@ public class boulderScipt : MonoBehaviour
     void DestroyObjectDelayed()
     {
         Destroy(gameObject, 20);
+    }
+
+     private void OnTriggerEnter(Collider other){
+         
+         if(other.name.Equals("Body")){
+                Debug.Log("Car Damaged");
+                
+                var carController = carGameObject.GetComponent<CarController>();
+                carController.gethit = true;
+         }
+         
     }
 }

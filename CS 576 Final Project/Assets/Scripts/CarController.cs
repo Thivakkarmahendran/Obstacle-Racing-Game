@@ -26,13 +26,16 @@ public class CarController : MonoBehaviour
     public float motorForce = 50f;
     public float brakeForce = 20f;
     public float max_speed = 100f;
+
     public bool powerup = false;
     public bool slow = false;
     private float timestar = 5;
     public bool bigger = false;
     public bool smaller = false;
+    
     Vector3 original_size;
     BoxCollider car_collider;
+    
     private float car_mass;
     public int maxHealth = 100;
     public int currentHealth;
@@ -40,17 +43,21 @@ public class CarController : MonoBehaviour
     public bool gethit = false;
     public Transform respawnpoint;
     public bool stealth = false;
+    
     Material m_Material;
+    
     private AudioSource audios;
     public AudioClip music_drive;
     public AudioClip music_powerup;
     public AudioClip music_powerdown;
     public AudioClip music_big;
     public AudioClip music_small;
+    
     void Awake()
     {
         audios = GetComponent<AudioSource>();
     }
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -62,6 +69,7 @@ public class CarController : MonoBehaviour
         original_size = car_collider.size;        
         m_Material = GetComponent<Renderer>().material;
     }
+    
     private void FixedUpdate()
     {
         Hit();
@@ -261,19 +269,22 @@ public class CarController : MonoBehaviour
                 transform.position = respawnpoint.transform.position;
             }
         }
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
             gethit = false;
         }
+        */
 
         void TakeDamage(int damage)
         {
             currentHealth -= damage;
-
             healthBar.SetHealth(currentHealth);
+            gethit = false;
         }
     }
+
     public void Check_Death()
     {
         if (currentHealth == 0)
@@ -293,6 +304,7 @@ public class CarController : MonoBehaviour
         mat.SetColor("_Color", newColor);
 
     }
+
     public void Stealth_Mode()
     {
         if (stealth == true)
@@ -313,6 +325,7 @@ public class CarController : MonoBehaviour
             }
         }
     }
+    
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Respawn"))
@@ -321,4 +334,5 @@ public class CarController : MonoBehaviour
             respawnpoint.transform.position = child.transform.position;
         }
     }
+
 }

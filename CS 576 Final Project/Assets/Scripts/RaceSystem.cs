@@ -11,14 +11,17 @@ public class RaceSystem : MonoBehaviour
     int currentLap;
     public Text lapCounter;
     public Text lapTime;
+    public Text bestTimeText;
     string lTime;
     float startTime;
     float elapsedTime;
+    private string bestTime;
     public bool crossed_front;
     public bool crossed_midpoint;
     bool race_completed;
     public GameObject winPanel;
     public GameObject pauseMenu;
+
     void Start()
     {
         Time.timeScale = 1;
@@ -33,7 +36,8 @@ public class RaceSystem : MonoBehaviour
         race_completed = false;
         lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
         lapTime.text = "00:00:00";
-
+        bestTime = System.IO.File.ReadAllText("bestTime.txt");
+        bestTimeText.text = "Best Time:\n" + bestTime;
     }
 
     // Update is called once per frame
@@ -45,9 +49,12 @@ public class RaceSystem : MonoBehaviour
         }
         if(race_completed){
             Time.timeScale = 0;
+            if(bestTime == "" || lTime.CompareTo(bestTime) == -1){
+                System.IO.File.WriteAllText("bestTime.txt", lTime);
+                bestTimeText.text = "Best Time:\n" + lTime;
+            }
             winPanel.SetActive(true);
-            GameObject.Find("WinText").GetComponent<Text>().text = "Race Completed!\n\nYourTime\n\n" + lTime;
-            //winPanel.GetComponentInChildren<Text>().text = "Race Completed!\n\nYourTime\n\n" + lTime;
+            GameObject.Find("WinText").GetComponent<Text>().text = "Race Completed!\nYourTime:\n" + lTime;
         }
         else{
             elapsedTime = Time.time - startTime;

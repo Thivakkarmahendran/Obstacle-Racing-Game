@@ -47,7 +47,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CarDriver.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
@@ -63,6 +62,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
      <Compile Include="Assets\Scripts\terrainScipt.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+     <Compile Include="Assets\Scripts\Unpause.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
@@ -77,8 +77,10 @@
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\Scripts\CameraFollower.cs" />
+     <Compile Include="Assets\Scripts\ball.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Scripts\GetBestTime.cs" />
      <Compile Include="Assets\Scripts\SelectCar.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
@@ -95,7 +97,6 @@
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Scripts\FinishLine.cs" />
-     <Compile Include="Assets\Scripts\Unpause.cs" />
      <None Include="Assets\Textures\Downloads\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Packages\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Packages\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
