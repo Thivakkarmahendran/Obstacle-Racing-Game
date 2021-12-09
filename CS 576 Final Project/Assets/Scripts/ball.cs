@@ -12,7 +12,6 @@ public class ball : MonoBehaviour
 
                 var carController = carGameObject.GetComponent<CarController>();
                 carController.gethit = true;
-                carController.Hit();
          }
          
     }

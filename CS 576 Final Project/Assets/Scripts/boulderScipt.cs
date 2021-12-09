@@ -39,7 +39,6 @@ public class boulderScipt : MonoBehaviour
                 
                 var carController = carGameObject.GetComponent<CarController>();
                 carController.gethit = true;
-                carController.Hit();
          }
          
     }
