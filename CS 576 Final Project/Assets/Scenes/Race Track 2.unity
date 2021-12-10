@@ -13503,11 +13503,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 117640811271042569, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
   m_PrefabInstance: {fileID: 437559762}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &438214845 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9179364018537632213, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-  m_PrefabInstance: {fileID: 1809893560}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452292224
 GameObject:
   m_ObjectHideFlags: 0
@@ -15497,6 +15492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c495b387e918b6240b1007ed9ff8a3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedMax: 100
 --- !u!1001 &747451159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19832,62 +19828,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 262255772, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: m_Mass
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: cmass
-      value: -0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: bigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: gethit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: smaller
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: stealth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1722493395}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: respawnpoint
-      value: 
-      objectReference: {fileID: 176359670}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rearLeftWheelTransform
-      value: 
-      objectReference: {fileID: 632050699}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: frontRightWheeTransform
-      value: 
-      objectReference: {fileID: 1351760965}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rearRightWheelTransform
-      value: 
-      objectReference: {fileID: 1477563066}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: frontRightWheelTransform
-      value: 
-      objectReference: {fileID: 1351760965}
     - target: {fileID: 374578026, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_Name
       value: Rear Left collider
@@ -19952,10 +19892,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 07f44fe3e9c462146a7769b976c50ec4, type: 2}
-    m_RemovedComponents:
-    - {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-    - {fileID: 262255771, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-    - {fileID: 262255772, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
 --- !u!1001 &1361918738
 PrefabInstance:
@@ -24529,62 +24466,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 262255772, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: m_Mass
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: alpha
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: cmass
-      value: -0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: bigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: gethit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: smaller
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: stealth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1722493395}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: respawnpoint
-      value: 
-      objectReference: {fileID: 176359670}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rearLeftWheelTransform
-      value: 
-      objectReference: {fileID: 438214845}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: frontRightWheeTransform
-      value: 
-      objectReference: {fileID: 823809754}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: rearRightWheelTransform
-      value: 
-      objectReference: {fileID: 1852319462}
-    - target: {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-      propertyPath: frontRightWheelTransform
-      value: 
-      objectReference: {fileID: 823809754}
     - target: {fileID: 266322518, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_Name
       value: Front Left Collider Ai
@@ -24666,9 +24547,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 07f44fe3e9c462146a7769b976c50ec4, type: 2}
     m_RemovedComponents:
-    - {fileID: 262255778, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-    - {fileID: 262255771, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-    - {fileID: 262255772, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
 --- !u!1001 &1836204538
 PrefabInstance:
@@ -25033,11 +24914,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3703196907510413085, guid: 3d615f7c5d84f457c8b7abe7e5a812ed, type: 3}
   m_PrefabInstance: {fileID: 1849995398}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1852319462 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1316177939782568698, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
-  m_PrefabInstance: {fileID: 1809893560}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1856823034
 GameObject:
