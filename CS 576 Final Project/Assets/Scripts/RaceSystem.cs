@@ -59,7 +59,7 @@ public class RaceSystem : MonoBehaviour
             Time.timeScale = 0;
             if(bestTime == "" || lTime.CompareTo(bestTime) == -1){
                 System.IO.File.WriteAllText("bestTime.txt", lTime);
-                bestTimeText.text = "Best Time:\n" + lTime;
+                //bestTimeText.text = "Best Time:\n" + lTime;
             }
             winPanel.SetActive(true);
             GameObject.Find("WinText").GetComponent<Text>().text = "Race Completed!\nYourTime:\n" + lTime;
@@ -72,7 +72,7 @@ public class RaceSystem : MonoBehaviour
             
             var checkpointsTracker = checkpointsGameObject.GetComponent<checkpointTracker>();
             
-            if(crossed_front && checkpointsTracker.reachedAllCheckpoints()){
+            if(crossed_front && !checkpointsTracker.reachedAllCheckpoints()){
                 currentLap += 1;
                 crossed_front = false;
                 lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WreckingBallScript : MonoBehaviour
 {
 
-    
+
     Rigidbody2D rb2d;
     public float leftPushRange;
     public float rightPushRange;
@@ -15,7 +15,7 @@ public class WreckingBallScript : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.angularVelocity = velocityThreshold;
+        //rb2d.angularVelocity = velocityThreshold;
 
         /*
         // Make the hinge motor rotate with 90 degrees per second and a strong force.
@@ -27,7 +27,7 @@ public class WreckingBallScript : MonoBehaviour
     }
 
     void Update(){
-        push();
+        //push();
     }
 
     public void push(){
@@ -42,5 +42,5 @@ public class WreckingBallScript : MonoBehaviour
 
     }
 
-    
+
 }
