@@ -17,7 +17,10 @@ public class checkpointTracker : MonoBehaviour
   private  GameObject waterfall;
   private  GameObject wreckingBalls;
 
+  public GameObject carGameObject;
+
   public Text alertText;
+  
 
 
   void Start(){
@@ -41,7 +44,10 @@ public class checkpointTracker : MonoBehaviour
 
   }
 
-   public  void checkPointReached(string name){
+   public  void checkPointReached(string name, Vector3 position){
+
+       var carController = carGameObject.GetComponent<CarController>();
+      
 
        if(name.Equals("Checkpoint1")){ // before snow
          
@@ -50,6 +56,7 @@ public class checkpointTracker : MonoBehaviour
          if(!reachedCheckpoint2 && !reachedCheckpoint3 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint1 = true;
            alertText.text = "Reached Checkpoint 1";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -69,6 +76,7 @@ public class checkpointTracker : MonoBehaviour
          if(reachedCheckpoint1 && !reachedCheckpoint3 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint2 = true;
            alertText.text = "Reached Checkpoint 2";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -88,6 +96,7 @@ public class checkpointTracker : MonoBehaviour
          if(reachedCheckpoint1 && reachedCheckpoint2 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint3 = true;
            alertText.text = "Reached Checkpoint 3";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -107,6 +116,7 @@ public class checkpointTracker : MonoBehaviour
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint4 = true;
            alertText.text = "Reached Checkpoint 4";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -126,6 +136,7 @@ public class checkpointTracker : MonoBehaviour
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && reachedCheckpoint4 && !reachedCheckpoint6){
            reachedCheckpoint5 = true;
            alertText.text = "Reached Checkpoint 5";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -145,6 +156,7 @@ public class checkpointTracker : MonoBehaviour
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && reachedCheckpoint4 && reachedCheckpoint5){
            reachedCheckpoint6 = true;
            alertText.text = "Reached Checkpoint 6";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
@@ -175,6 +187,8 @@ public class checkpointTracker : MonoBehaviour
     reachedCheckpoint4 = false;
     reachedCheckpoint5 = false;
     reachedCheckpoint6 = false;
+
+    alertText.text = "";
    }
 
 }

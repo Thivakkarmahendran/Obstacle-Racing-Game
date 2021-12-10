@@ -13,9 +13,9 @@ public class CheckPoint : MonoBehaviour{
          if(other.name.Equals("Body")){
 
                 var checkpointsTracker = checkpointsGameObject.GetComponent<checkpointTracker>();
-                checkpointsTracker.checkPointReached(gameObject.name);
+                checkpointsTracker.checkPointReached(gameObject.name, transform.position);
          }
          
         }
-        
+
 }

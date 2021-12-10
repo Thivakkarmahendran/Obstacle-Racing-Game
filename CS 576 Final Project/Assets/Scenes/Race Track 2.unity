@@ -10037,12 +10037,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 369.55948
+      value: 339.7595
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &77912867 stripped
@@ -11533,12 +11537,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 393.55948
+      value: 365.55948
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &235185780 stripped
@@ -11603,12 +11611,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 390.2595
+      value: 366.95947
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &238790076 stripped
@@ -13028,12 +13040,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 356.45947
+      value: 393.55948
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &384826573 stripped
@@ -13470,12 +13486,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 377.45947
+      value: 373.45947
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &437559763 stripped
@@ -16561,6 +16581,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 377.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 23.779999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &988101443 stripped
@@ -16845,6 +16877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893452cf0694e4a9f9d55ee4ccb7cef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carGameObject: {fileID: 786722103}
   alertText: {fileID: 1988471475}
 --- !u!4 &1040358376
 Transform:
@@ -18265,12 +18298,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 365.8595
+      value: 345.3595
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &1167565626 stripped
@@ -19881,7 +19918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 454915772877162253, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 128.71712
+      value: 118.6
       objectReference: {fileID: 0}
     - target: {fileID: 454915772877162253, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23020,12 +23057,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 347.3595
+      value: 396.3595
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &1672524203 stripped
@@ -24570,7 +24611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452537174833460775, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 454915772877162253, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_RootOrder
@@ -24847,9 +24888,9 @@ MonoBehaviour:
   lapTime: {fileID: 1902765247}
   bestTimeText: {fileID: 0}
   crossed_front: 0
-  crossed_midpoint: 0
   winPanel: {fileID: 1363135382}
   pauseMenu: {fileID: 306568720}
+  checkpointsGameObject: {fileID: 1040358374}
 --- !u!64 &1842561233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26248,12 +26289,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 377.5
+      value: 347.3595
       objectReference: {fileID: 0}
     - target: {fileID: 117640811507879994, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 23.779999
       objectReference: {fileID: 0}
+    - target: {fileID: 4467035689250259180, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
+      propertyPath: carGameObject
+      value: 
+      objectReference: {fileID: 786722103}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ed3c2675524cfd901d83a45abd936, type: 3}
 --- !u!4 &1970098021 stripped

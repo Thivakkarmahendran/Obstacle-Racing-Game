@@ -79,8 +79,17 @@ public class CarController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        //Hit();
-        //Check_Death();
+        
+        //Respawm if car fall from edge
+        if(transform.position.y < -50){
+            currentHealth = maxHealth;
+            healthBar.SetHealth(currentHealth);
+            transform.position = respawnpoint.transform.position;
+            Physics.SyncTransforms();
+        }
+
+        Hit();
+        Check_Death();
 
         // car in wind area
         if(inWindZone){
@@ -283,12 +292,13 @@ public class CarController : MonoBehaviour
         if (gethit == true)
         {
             TakeDamage(20);
-            if(currentHealth == 0)
+            if(currentHealth <= 0)
             {
-                
                 new WaitForSeconds(2);
                 currentHealth = maxHealth;
                 transform.position = respawnpoint.transform.position;
+                healthBar.SetHealth(currentHealth);
+                gethit = false;
             }
         }
 
