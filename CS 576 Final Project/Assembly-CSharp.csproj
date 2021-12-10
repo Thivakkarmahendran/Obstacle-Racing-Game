@@ -98,6 +98,7 @@
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Scripts\windArea.cs" />
      <Compile Include="Assets\Scripts\FinishLine.cs" />
      <None Include="Assets\Textures\Downloads\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Packages\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
