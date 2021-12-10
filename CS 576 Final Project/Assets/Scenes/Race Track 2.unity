@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14674,8 +14674,6 @@ GameObject:
   - component: {fileID: 613385879}
   - component: {fileID: 613385883}
   - component: {fileID: 613385882}
-  - component: {fileID: 613385881}
-  - component: {fileID: 613385880}
   m_Layer: 0
   m_Name: Mesh_Blood
   m_TagString: Untagged
@@ -14697,30 +14695,6 @@ Transform:
   m_Father: {fileID: 1450150248}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &613385880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613385878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b43e1de8460bbd429abad1c1eb5b726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &613385881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613385878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc382eaa73f3b31428faf672575002b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &613385882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16967,19 +16941,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.x
-      value: 73.589294
+      value: 96.37254
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.y
-      value: 22.48595
+      value: 22.906437
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -312.9785
+      value: -301.5866
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.737
+      value: 7.9475
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18242,7 +18216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db34691b24c940b09c85241e88d97f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boulderPrefab: {fileID: 6909372187206398784, guid: ca9dadb8995b04c3e9d8fc9dc22ba49c, type: 3}
+  boulderPrefab: {fileID: 4221022608841685160, guid: ca9dadb8995b04c3e9d8fc9dc22ba49c, type: 3}
 --- !u!4 &1174790360
 Transform:
   m_ObjectHideFlags: 0
@@ -21232,8 +21206,6 @@ GameObject:
   - component: {fileID: 1491512996}
   - component: {fileID: 1491513000}
   - component: {fileID: 1491512999}
-  - component: {fileID: 1491512998}
-  - component: {fileID: 1491512997}
   m_Layer: 0
   m_Name: Mesh_Dirt
   m_TagString: Untagged
@@ -21255,30 +21227,6 @@ Transform:
   m_Father: {fileID: 1450150248}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1491512997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491512995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b43e1de8460bbd429abad1c1eb5b726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1491512998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491512995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc382eaa73f3b31428faf672575002b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1491512999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22226,19 +22174,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.x
-      value: 73.589294
+      value: 105.809364
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.y
-      value: 22.48595
+      value: 23.323366
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -864
+      value: -869.624
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7369995
+      value: 8.1554
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22993,19 +22941,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.x
-      value: 73.589294
+      value: 103.939316
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalScale.y
-      value: 22.48595
+      value: 22.12541
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -864
+      value: -867.6305
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7369995
+      value: 7.557
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25149,12 +25097,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 93.54931
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 23.010656
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.1
+      value: -19.34
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.1791677
+      value: 7.9989
       objectReference: {fileID: 0}
     - target: {fileID: 7630298007286821293, guid: 0dae58a7add2c4920823cbdd43cb9961, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26752,8 +26708,6 @@ GameObject:
   - component: {fileID: 2082191972}
   - component: {fileID: 2082191976}
   - component: {fileID: 2082191975}
-  - component: {fileID: 2082191974}
-  - component: {fileID: 2082191973}
   m_Layer: 0
   m_Name: Mesh_Top
   m_TagString: Untagged
@@ -26775,30 +26729,6 @@ Transform:
   m_Father: {fileID: 1450150248}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2082191973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082191971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b43e1de8460bbd429abad1c1eb5b726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2082191974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082191971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc382eaa73f3b31428faf672575002b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2082191975
 MeshRenderer:
   m_ObjectHideFlags: 0

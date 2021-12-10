@@ -36,13 +36,20 @@ public class RaceSystem : MonoBehaviour
         race_completed = false;
         lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
         lapTime.text = "00:00:00";
-        bestTime = System.IO.File.ReadAllText("bestTime.txt");
+
+        if (System.IO.File.Exists("bestTime.txt")){
+          bestTime = System.IO.File.ReadAllText("bestTime.txt");
+        }
+        else{
+          bestTime = "";
+        }
+
         bestTimeText.text = "Best Time:\n" + bestTime;
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         if(Input.GetKeyDown(KeyCode.Escape)){
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
@@ -80,7 +87,7 @@ public class RaceSystem : MonoBehaviour
         int min = sec / 60;
         sec -= 60 * min;
 
-        
+
         return new Vector3(min, sec, ms);
     }
 }
