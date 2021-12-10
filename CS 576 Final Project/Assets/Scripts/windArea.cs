@@ -8,7 +8,7 @@ public class windArea : MonoBehaviour
     public Vector3 windDirection;
 
     public void Start(){
-        windStrength = 650;
+        windStrength = 0.01f;
         windDirection = new Vector3(0f, 1f, Random.Range(-5f,5f));
     }
 }

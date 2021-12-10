@@ -76,21 +76,22 @@ public class CarController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        Hit();
-        Check_Death();
+        //Hit();
+        //Check_Death();
 
+        // car in wind area
         if(inWindZone){
-            rb.AddForce(windZone.GetComponent<windArea>().windDirection * windZone.GetComponent<windArea>().windStrength);
+            rb.AddForce(windZone.GetComponent<windArea>().windDirection * windZone.GetComponent<windArea>().windStrength, ForceMode.VelocityChange);
         }
 
 
         if(currentHealth > 0)
         {
-            Stealth_Mode();
-            Become_Faster();
-            Become_slower();
-            Big_mode();
-            Small_mode();
+            //Stealth_Mode();
+            //Become_Faster();
+            //Become_slower();
+            //Big_mode();
+            //Small_mode();
             GetInput();
             HandleMotor();
             HandleSteering();
