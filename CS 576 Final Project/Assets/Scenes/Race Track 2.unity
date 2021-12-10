@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15860,6 +15860,8 @@ MonoBehaviour:
   motorForce: 300
   brakeForce: 0
   max_speed: 100
+  inWindZone: 0
+  windZone: {fileID: 0}
   powerup: 1
   slow: 0
   bigger: 0
@@ -24453,7 +24455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452537174833460775, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 454915772877162253, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
       propertyPath: m_RootOrder
@@ -26635,6 +26637,65 @@ WheelCollider:
   m_CorrespondingSourceObject: {fileID: 266322520, guid: 45516e9d6899c47fc87a13813d1a70f6, type: 3}
   m_PrefabInstance: {fileID: 1809893560}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2070403873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070403876}
+  - component: {fileID: 2070403875}
+  - component: {fileID: 2070403874}
+  m_Layer: 0
+  m_Name: windArea
+  m_TagString: windArea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2070403874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070403873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce8c9400c9f34147975ed64cc6ea256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windStrength: 800
+  windDirection: {x: 0, y: 1, z: -5}
+--- !u!65 &2070403875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070403873}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 237.92758, y: 46.93112, z: 97.07962}
+  m_Center: {x: 57.78151, y: 22.96556, z: -4.7760468}
+--- !u!4 &2070403876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070403873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 389.9048, y: 1, z: 57.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2072870060
 PrefabInstance:
   m_ObjectHideFlags: 0

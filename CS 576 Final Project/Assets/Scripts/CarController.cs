@@ -27,6 +27,10 @@ public class CarController : MonoBehaviour
     public float brakeForce = 20f;
     public float max_speed = 100f;
 
+    //Windzone
+    public bool inWindZone = false;
+    public GameObject windZone;
+
     public bool powerup = false;
     public bool slow = false;
     private float timestar = 5;
@@ -74,6 +78,12 @@ public class CarController : MonoBehaviour
     {
         Hit();
         Check_Death();
+
+        if(inWindZone){
+            rb.AddForce(windZone.GetComponent<windArea>().windDirection * windZone.GetComponent<windArea>().windStrength);
+        }
+
+
         if(currentHealth > 0)
         {
             Stealth_Mode();
@@ -86,6 +96,8 @@ public class CarController : MonoBehaviour
             HandleSteering();
             UpdateWheels();
         }
+
+
     }
 
     private void GetInput()
@@ -167,6 +179,9 @@ public class CarController : MonoBehaviour
         rspeed = rb.velocity.magnitude;
     }
 
+
+
+    //POWERUPS
     public void Become_Faster()
     {
         if (powerup == true)
@@ -256,6 +271,9 @@ public class CarController : MonoBehaviour
         }
     }
 
+
+
+
     public void Hit()
     {
         if (gethit == true)
@@ -269,13 +287,6 @@ public class CarController : MonoBehaviour
                 transform.position = respawnpoint.transform.position;
             }
         }
-        /*
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-            gethit = false;
-        }
-        */
 
         void TakeDamage(int damage)
         {
@@ -326,13 +337,37 @@ public class CarController : MonoBehaviour
         }
     }
     
+
+
+
+
+
+    //COLLIDERS
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Respawn"))
+        if(other.CompareTag("Respawn"))
         {
             GameObject child = other.transform.GetChild(0).gameObject;
             respawnpoint.transform.position = child.transform.position;
         }
+
+        if(other.CompareTag("windArea"))
+        {
+            Debug.Log("Entered windy area");
+            windZone = other.gameObject;
+            inWindZone = true;
+        }        
+
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("windArea"))
+        {
+            Debug.Log("Exiting windy area");
+            windZone = other.gameObject;
+            inWindZone = false;
+        }  
     }
 
 }
