@@ -71,10 +71,10 @@
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\StacktraceFilter.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Assertions\LogScope\ILogScope.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\PostBuildCleanupAttribute.cs" />
-     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRenderer.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\Messages\IEditModeTestYieldInstruction.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\PlaymodeTestsController.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestData.cs" />
+     <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRenderer.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Runner\PlaymodeWorkItemFactory.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRepeatedTestCommand.cs" />
      <Compile Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\Utils\AssemblyProvider\PlayerTestAssemblyProvider.cs" />

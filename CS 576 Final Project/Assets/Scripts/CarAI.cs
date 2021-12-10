@@ -53,7 +53,7 @@ public class CarAI : MonoBehaviour
         }
     }
     void IncrementWaypoint(){
-        Debug.Log(Vector3.Distance(transform.position, nodes[curNode].position));
+        //Debug.Log(Vector3.Distance(transform.position, nodes[curNode].position));
         if(Vector3.Distance(transform.position, nodes[curNode].position) < 2){
             curNode += 1;
             if(curNode == nodes.Count)

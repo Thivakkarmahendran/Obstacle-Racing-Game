@@ -54,6 +54,7 @@
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Scripts\RaceSystem.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\CarAI.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Scripts\SelectStage.cs" />
@@ -85,6 +86,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\checkpointTracker.cs" />
+     <Compile Include="Assets\Scripts\Path.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
      <Compile Include="Assets\Scripts\OpenCloseRules.cs" />
      <Compile Include="Assets\Scripts\WreckingBallScript.cs" />
