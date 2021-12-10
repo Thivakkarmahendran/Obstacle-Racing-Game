@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class checkpointTracker : MonoBehaviour
 {
 
-  private static bool reachedCheckpoint1;
-  private static bool reachedCheckpoint2;
-  private static bool reachedCheckpoint3;
-  private static bool reachedCheckpoint4;
-  private static bool reachedCheckpoint5;
-  private static bool reachedCheckpoint6;
+  private  bool reachedCheckpoint1;
+  private  bool reachedCheckpoint2;
+  private  bool reachedCheckpoint3;
+  private  bool reachedCheckpoint4;
+  private  bool reachedCheckpoint5;
+  private  bool reachedCheckpoint6;
   
-  private static GameObject snow;
-  private static GameObject waterfall;
-  private static GameObject wreckingBalls;
+  private  GameObject snow;
+  private  GameObject waterfall;
+  private  GameObject wreckingBalls;
+
+  public GameObject carGameObject;
+
+  public Text alertText;
+  
 
 
   void Start(){
@@ -35,9 +41,13 @@ public class checkpointTracker : MonoBehaviour
     snow.SetActive(false);
     waterfall.SetActive(false);
     wreckingBalls.SetActive(false);
+
   }
 
-   public static void checkPointReached(string name){
+   public  void checkPointReached(string name, Vector3 position){
+
+       var carController = carGameObject.GetComponent<CarController>();
+      
 
        if(name.Equals("Checkpoint1")){ // before snow
          
@@ -45,9 +55,12 @@ public class checkpointTracker : MonoBehaviour
 
          if(!reachedCheckpoint2 && !reachedCheckpoint3 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint1 = true;
+           alertText.text = "Reached Checkpoint 1";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
          
          terrainScipt.spawnBoulder = true;
@@ -62,9 +75,12 @@ public class checkpointTracker : MonoBehaviour
 
          if(reachedCheckpoint1 && !reachedCheckpoint3 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint2 = true;
+           alertText.text = "Reached Checkpoint 2";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
 
          terrainScipt.spawnBoulder = true;
@@ -79,9 +95,12 @@ public class checkpointTracker : MonoBehaviour
          
          if(reachedCheckpoint1 && reachedCheckpoint2 && !reachedCheckpoint4 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint3 = true;
+           alertText.text = "Reached Checkpoint 3";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
 
          terrainScipt.spawnBoulder = false;
@@ -96,9 +115,12 @@ public class checkpointTracker : MonoBehaviour
          
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && !reachedCheckpoint5 && !reachedCheckpoint6){
            reachedCheckpoint4 = true;
+           alertText.text = "Reached Checkpoint 4";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
 
          terrainScipt.spawnBoulder = false;
@@ -113,9 +135,12 @@ public class checkpointTracker : MonoBehaviour
          
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && reachedCheckpoint4 && !reachedCheckpoint6){
            reachedCheckpoint5 = true;
+           alertText.text = "Reached Checkpoint 5";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
 
          terrainScipt.spawnBoulder = false;
@@ -130,9 +155,12 @@ public class checkpointTracker : MonoBehaviour
          
          if(reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && reachedCheckpoint4 && reachedCheckpoint5){
            reachedCheckpoint6 = true;
+           alertText.text = "Reached Checkpoint 6";
+           carController.respawnpoint.transform.position = position;
          }
          else{
            Debug.Log("Missed Previous checkpoint");
+           alertText.text = "Missed Previous checkpoint";
          }
 
          terrainScipt.spawnBoulder = false;
@@ -148,17 +176,19 @@ public class checkpointTracker : MonoBehaviour
 
 
 
-   public static bool reachedAllCheckpoints(){
+   public  bool reachedAllCheckpoints(){
      return reachedCheckpoint1 && reachedCheckpoint2 && reachedCheckpoint3 && reachedCheckpoint4 && reachedCheckpoint5 && reachedCheckpoint6;
    }
 
-   public static void restartAllCheckpoints(){
+   public  void restartAllCheckpoints(){
     reachedCheckpoint1 = false;
     reachedCheckpoint2 = false;
     reachedCheckpoint3 = false;
     reachedCheckpoint4 = false;
     reachedCheckpoint5 = false;
     reachedCheckpoint6 = false;
+
+    alertText.text = "";
    }
 
 }
