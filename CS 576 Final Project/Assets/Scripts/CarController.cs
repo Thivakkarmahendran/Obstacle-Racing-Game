@@ -379,24 +379,27 @@ public class CarController : MonoBehaviour
             //powerups = {"fast", "slow", "bigger", "smaller", "maxHealth", "stealth"};
             int randomPowerUp = UnityEngine.Random.Range(0,5);
             string randomPowerup = powerups[randomPowerUp];
-            infoText.text = "Powerup: " + randomPowerup;
 
 
             switch (randomPowerup){
                 case "fast":
                     powerup = true;
+                    infoText.text = "Powerup: " + randomPowerup;
                     break;
 
                 case "slow":
                     slow = true;
+                    infoText.text = "Powerup: " + randomPowerup;
                     break;
 
                 case "bigger":
                     bigger = true;
+                    infoText.text = "Powerup: " + randomPowerup;
                     break;
 
                 case "smaller":
                     smaller = true;
+                    infoText.text = "Powerup: " + randomPowerup;
                     break;
 
                 case "maxHealth":
@@ -406,6 +409,7 @@ public class CarController : MonoBehaviour
 
                 case "stealth":
                     stealth = true;
+                    infoText.text = "Powerup: " + randomPowerup;
                     break;
 
                 default:
