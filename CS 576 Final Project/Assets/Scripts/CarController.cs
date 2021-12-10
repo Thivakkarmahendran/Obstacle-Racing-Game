@@ -34,6 +34,9 @@ public class CarController : MonoBehaviour
     public bool inWindZone = false;
     public GameObject windZone;
 
+
+    //POWERUPS
+    string[] powerups = {"fast", "slow", "bigger", "smaller", "maxHealth", "stealth"};
     public bool powerup = false;
     public bool slow = false;
     private float timestar = 5;
@@ -99,11 +102,11 @@ public class CarController : MonoBehaviour
 
         if(currentHealth > 0)
         {
-            //Stealth_Mode();
-            //Become_Faster();
-            //Become_slower();
-            //Big_mode();
-            //Small_mode();
+            Stealth_Mode();
+            Become_Faster();
+            Become_slower();
+            Big_mode();
+            Small_mode();
             GetInput();
             HandleMotor();
             HandleSteering();
@@ -211,6 +214,7 @@ public class CarController : MonoBehaviour
                 powerup = false;
                 timestar = 20;
                 motorForce = 50f;
+                infoText.text = "";
             }
         }
     }
@@ -231,6 +235,7 @@ public class CarController : MonoBehaviour
                 powerup = false;
                 timestar = 20;
                 motorForce = 50f;
+                infoText.text = "";
             }
         }
     }
@@ -256,6 +261,7 @@ public class CarController : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 1);
                 car_collider.size = original_size;
                 rb.mass = car_mass;
+                infoText.text = "";
             }
         }
     }
@@ -280,6 +286,7 @@ public class CarController : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 1);
                 car_collider.size = original_size;
                 rb.mass = car_mass;
+                infoText.text = "";
             }
         }
     }
@@ -347,6 +354,7 @@ public class CarController : MonoBehaviour
                 ChangeAlpha(m_Material, 1f);
                 car_collider.enabled = true;
                 timestar = 5;
+                infoText.text = "";
             }
         }
     }
@@ -363,6 +371,51 @@ public class CarController : MonoBehaviour
         {
             GameObject child = other.transform.GetChild(0).gameObject;
             respawnpoint.transform.position = child.transform.position;
+        }
+
+
+        if(other.CompareTag("mysterybox"))
+        {
+            //powerups = {"fast", "slow", "bigger", "smaller", "maxHealth", "stealth"};
+            int randomPowerUp = UnityEngine.Random.Range(0,5);
+            string randomPowerup = powerups[randomPowerUp];
+
+
+            switch (randomPowerup){
+                case "fast":
+                    powerup = true;
+                    infoText.text = "Powerup: " + randomPowerup;
+                    break;
+
+                case "slow":
+                    slow = true;
+                    infoText.text = "Powerup: " + randomPowerup;
+                    break;
+
+                case "bigger":
+                    bigger = true;
+                    infoText.text = "Powerup: " + randomPowerup;
+                    break;
+
+                case "smaller":
+                    smaller = true;
+                    infoText.text = "Powerup: " + randomPowerup;
+                    break;
+
+                case "maxHealth":
+                    currentHealth = maxHealth;
+                    healthBar.SetHealth(currentHealth);
+                    break;
+
+                case "stealth":
+                    stealth = true;
+                    infoText.text = "Powerup: " + randomPowerup;
+                    break;
+
+                default:
+                    break;
+            }
+
         }
 
         if(other.CompareTag("windArea"))

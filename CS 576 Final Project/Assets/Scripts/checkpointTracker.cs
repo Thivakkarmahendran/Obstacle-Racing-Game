@@ -17,6 +17,11 @@ public class checkpointTracker : MonoBehaviour
   private  GameObject waterfall;
   private  GameObject wreckingBalls;
 
+  private  GameObject mystreyBoxSet1;
+  private  GameObject mystreyBoxSet2;
+  private  GameObject mystreyBoxSet3;
+  private  GameObject mystreyBoxSet4;
+
   public GameObject carGameObject;
 
   public Text alertText;
@@ -38,9 +43,21 @@ public class checkpointTracker : MonoBehaviour
     waterfall = GameObject.Find("Waterfall");
     wreckingBalls = GameObject.Find("Wrecking Balls");
 
+    mystreyBoxSet1 = GameObject.Find("mystreyBoxSet1");
+    mystreyBoxSet2 = GameObject.Find("mystreyBoxSet2");
+    mystreyBoxSet3 = GameObject.Find("mystreyBoxSet3");
+    mystreyBoxSet4 = GameObject.Find("mystreyBoxSet4");
+
+
     snow.SetActive(false);
     waterfall.SetActive(false);
     wreckingBalls.SetActive(false);
+
+    mystreyBoxSet1.SetActive(true);
+    mystreyBoxSet2.SetActive(false);
+    mystreyBoxSet3.SetActive(false);
+    mystreyBoxSet4.SetActive(false);
+
 
   }
 
@@ -68,6 +85,11 @@ public class checkpointTracker : MonoBehaviour
          waterfall.SetActive(false);
          wreckingBalls.SetActive(false);
 
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(false);
+         mystreyBoxSet3.SetActive(false);
+         mystreyBoxSet4.SetActive(false);
+
        }
        else if(name.Equals("Checkpoint2")){ // after snow
          
@@ -87,6 +109,11 @@ public class checkpointTracker : MonoBehaviour
          snow.SetActive(false);
          waterfall.SetActive(false);
          wreckingBalls.SetActive(false);
+
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(true);
+         mystreyBoxSet3.SetActive(false);
+         mystreyBoxSet4.SetActive(false);
 
        }
        else if(name.Equals("Checkpoint3")){ // before wrecking balls
@@ -108,6 +135,11 @@ public class checkpointTracker : MonoBehaviour
          waterfall.SetActive(false);
          wreckingBalls.SetActive(true);
 
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(false);
+         mystreyBoxSet3.SetActive(true);
+         mystreyBoxSet4.SetActive(false);
+
        }
        else if(name.Equals("Checkpoint4")){// after wrecking balls and before beach
          
@@ -127,6 +159,11 @@ public class checkpointTracker : MonoBehaviour
          snow.SetActive(false);
          waterfall.SetActive(true);
          wreckingBalls.SetActive(false);
+
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(false);
+         mystreyBoxSet3.SetActive(false);
+         mystreyBoxSet4.SetActive(false);
 
        }
        else if(name.Equals("Checkpoint5")){ // after beach
@@ -148,6 +185,11 @@ public class checkpointTracker : MonoBehaviour
          waterfall.SetActive(false);
          wreckingBalls.SetActive(false);
 
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(false);
+         mystreyBoxSet3.SetActive(false);
+         mystreyBoxSet4.SetActive(true);
+
        }
        else if(name.Equals("Checkpoint6")){ // before wind tunnel
          
@@ -167,6 +209,11 @@ public class checkpointTracker : MonoBehaviour
          snow.SetActive(false);
          waterfall.SetActive(false);
          wreckingBalls.SetActive(false);
+
+         mystreyBoxSet1.SetActive(false);
+         mystreyBoxSet2.SetActive(false);
+         mystreyBoxSet3.SetActive(false);
+         mystreyBoxSet4.SetActive(false);
 
        }
        else{
