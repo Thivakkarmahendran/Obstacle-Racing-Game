@@ -9,7 +9,7 @@ public class RaceSystem : MonoBehaviour
     public static int myGlobal = 1;
     int totalLaps;
     int currentLap;
-    public  Text lapCounter;
+    public Text lapCounter;
     public Text lapTime;
     public Text bestTimeText;
     string lTime;
@@ -17,11 +17,10 @@ public class RaceSystem : MonoBehaviour
     float elapsedTime;
     private string bestTime;
     public bool crossed_front;
+    public bool crossed_midpoint;
     bool race_completed;
-
     public GameObject winPanel;
     public GameObject pauseMenu;
-    public GameObject checkpointsGameObject;
 
     void Start()
     {
@@ -33,6 +32,7 @@ public class RaceSystem : MonoBehaviour
         startTime = Time.time;
         elapsedTime = 0;
         crossed_front = false;
+        crossed_midpoint = false;
         race_completed = false;
         lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
         lapTime.text = "00:00:00";
@@ -44,7 +44,7 @@ public class RaceSystem : MonoBehaviour
           bestTime = "";
         }
 
-        //bestTimeText.text = "Best Time:\n" + bestTime;
+        bestTimeText.text = "Best Time:\n" + bestTime;
     }
 
     // Update is called once per frame
@@ -54,7 +54,6 @@ public class RaceSystem : MonoBehaviour
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
-
         if(race_completed){
             Time.timeScale = 0;
             if(bestTime == "" || lTime.CompareTo(bestTime) == -1){
@@ -69,16 +68,12 @@ public class RaceSystem : MonoBehaviour
             Vector3 newTime = convertTime(elapsedTime);
             lTime = newTime[0].ToString("00") + ":" + newTime[1].ToString("00") + ":" + newTime[2].ToString("00");
             lapTime.text = lTime;
-            
-            var checkpointsTracker = checkpointsGameObject.GetComponent<checkpointTracker>();
-            
-            if(crossed_front && checkpointsTracker.reachedAllCheckpoints()){
+            if(crossed_front){
                 currentLap += 1;
                 crossed_front = false;
+                crossed_midpoint = false;
                 lapCounter.text =  "Lap " + currentLap + "/" + totalLaps;
-                checkpointsTracker.restartAllCheckpoints();
             }
-
             if(currentLap == totalLaps){
                 race_completed = true;
             }

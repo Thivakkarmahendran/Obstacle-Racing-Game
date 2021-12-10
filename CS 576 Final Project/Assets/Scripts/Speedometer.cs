@@ -11,7 +11,7 @@ public class Speedometer : MonoBehaviour {
     private Transform needleTranform;
     private Transform speedLabelTemplateTransform;
 
-    private float speedMax;
+    public float speedMax;
     private float speed;
 
     private void Awake() {
@@ -20,7 +20,7 @@ public class Speedometer : MonoBehaviour {
         speedLabelTemplateTransform.gameObject.SetActive(false);
 
         speed = 0f;
-        speedMax = 100f;
+        
 
         CreateSpeedLabels();
     }

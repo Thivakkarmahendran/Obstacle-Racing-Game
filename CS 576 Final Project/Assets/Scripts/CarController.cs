@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
@@ -23,16 +22,10 @@ public class CarController : MonoBehaviour
     public Transform rearLeftWheelTransform;
     public Transform rearRightWheelTransform;
 
-    public Text infoText;
-
     public float maxSteeringAngle = 30f;
     public float motorForce = 300f;
     public float brakeForce = 20f;
     public float max_speed = 100f;
-
-    //Windzone
-    public bool inWindZone = false;
-    public GameObject windZone;
 
     public bool powerup = false;
     public bool slow = false;
@@ -79,38 +72,20 @@ public class CarController : MonoBehaviour
     
     private void FixedUpdate()
     {
-        
-        //Respawm if car fall from edge
-        if(transform.position.y < -50){
-            currentHealth = maxHealth;
-            healthBar.SetHealth(currentHealth);
-            transform.position = respawnpoint.transform.position;
-            Physics.SyncTransforms();
-        }
-
         Hit();
         Check_Death();
-
-        // car in wind area
-        if(inWindZone){
-            rb.AddForce(windZone.GetComponent<windArea>().windDirection * windZone.GetComponent<windArea>().windStrength, ForceMode.VelocityChange);
-        }
-
-
         if(currentHealth > 0)
         {
-            //Stealth_Mode();
-            //Become_Faster();
-            //Become_slower();
-            //Big_mode();
-            //Small_mode();
+            Stealth_Mode();
+            Become_Faster();
+            Become_slower();
+            Big_mode();
+            Small_mode();
             GetInput();
             HandleMotor();
             HandleSteering();
             UpdateWheels();
         }
-
-
     }
 
     private void GetInput()
@@ -192,9 +167,6 @@ public class CarController : MonoBehaviour
         rspeed = rb.velocity.magnitude;
     }
 
-
-
-    //POWERUPS
     public void Become_Faster()
     {
         if (powerup == true)
@@ -284,23 +256,26 @@ public class CarController : MonoBehaviour
         }
     }
 
-
-
-
     public void Hit()
     {
         if (gethit == true)
         {
             TakeDamage(20);
-            if(currentHealth <= 0)
+            if(currentHealth == 0)
             {
+                
                 new WaitForSeconds(2);
                 currentHealth = maxHealth;
                 transform.position = respawnpoint.transform.position;
-                healthBar.SetHealth(currentHealth);
-                gethit = false;
             }
         }
+        /*
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+            gethit = false;
+        }
+        */
 
         void TakeDamage(int damage)
         {
@@ -351,39 +326,13 @@ public class CarController : MonoBehaviour
         }
     }
     
-
-
-
-
-
-    //COLLIDERS
     public void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Respawn"))
+        if (other.CompareTag("Respawn"))
         {
             GameObject child = other.transform.GetChild(0).gameObject;
             respawnpoint.transform.position = child.transform.position;
         }
-
-        if(other.CompareTag("windArea"))
-        {
-            Debug.Log("Entered windy area");
-            infoText.text = "Windy area";
-            windZone = other.gameObject;
-            inWindZone = true;
-        }        
-
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("windArea"))
-        {
-            Debug.Log("Exiting windy area");
-            infoText.text = "";
-            windZone = other.gameObject;
-            inWindZone = false;
-        }  
     }
 
 }
