@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CarController : MonoBehaviour
     public Transform frontRightWheelTransform;
     public Transform rearLeftWheelTransform;
     public Transform rearRightWheelTransform;
+
+    public Text infoText;
 
     public float maxSteeringAngle = 30f;
     public float motorForce = 300f;
@@ -355,6 +358,7 @@ public class CarController : MonoBehaviour
         if(other.CompareTag("windArea"))
         {
             Debug.Log("Entered windy area");
+            infoText.text = "Windy area";
             windZone = other.gameObject;
             inWindZone = true;
         }        
@@ -366,6 +370,7 @@ public class CarController : MonoBehaviour
         if(other.CompareTag("windArea"))
         {
             Debug.Log("Exiting windy area");
+            infoText.text = "";
             windZone = other.gameObject;
             inWindZone = false;
         }  
