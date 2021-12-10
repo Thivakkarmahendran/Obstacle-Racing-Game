@@ -9,7 +9,7 @@ public class RaceSystem : MonoBehaviour
     public static int myGlobal = 1;
     int totalLaps;
     int currentLap;
-    public Text lapCounter;
+    public  Text lapCounter;
     public Text lapTime;
     public Text bestTimeText;
     string lTime;
