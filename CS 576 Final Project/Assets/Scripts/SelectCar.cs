@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 public class SelectCar : MonoBehaviour
 {
     // Start is called before the first frame update
-    // 0 = Small, 1 = Normal, 2 = Big
+    // 3 = Speed, 4 = Normal, 5 = Life
+
     public void chooseCar(int carNum){
         // Store car choice in empty game object somewhere
 
-        SceneManager.LoadScene(3); // Load Stage Select Scene
+        SceneManager.LoadScene(carNum); // Load Stage Select Scene
     }
 }
