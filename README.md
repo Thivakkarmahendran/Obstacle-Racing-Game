@@ -1,8 +1,6 @@
 # CS576 Final Project - Obstacle racing game
 Members - Thivakkar Mahendran, Moses Reid, Chieh Min Chung
 
-# Goal of the Game
-
 # How to Play
 - Up arrow -> to go accelerate the car
 - Down arrow -> to go reverse 
