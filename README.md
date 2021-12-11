@@ -36,4 +36,35 @@ Members - Thivakkar Mahendran, Moses Reid, Chieh Min Chung
         - Stealth -> car can't get damages for 5 seconds
     - Pause menu lets the player start, restart, or go to the main menu
 - AI car competes in the race track by autonomously driving through the map  
+
+# Contributions
+- Thivakkar Mahendran - worked on the creation of the map/terrain + the obstacles in the map
+    - Whole of ball.cs
+    - Whole of boulderScipt.cs
+    - Some of CarController.cs
+        - line 368 to 440
+    - Whole of CheckPoint.cs
+    - Whole of checkpointTracker.cs
+    - Whole of mysteryBox.cs
+    - Whole of terrainScipt.cs
+    - Whole of windArea.cs
+    - Whole of WreckingBallScript.cs
+- Moses Reid - worked on the car + car controls
+    - Whole of CameraFollower.cs
+    - Whole of CarAI.cs
+    - Whole of ChangeScene.cs
+    - Whole of FinishLine.cs
+    - Whole of GetBestTime.cs
+    - Whole of Path.cs
+    - Whole of RaceSystem.cs
+    - Whole of SelectCar.cs
+    - Whole of SelectStage.cs
+    - Whole of Unpause.cs
+- Chieh Min Chung - worked on the main menu, car selection menu, and AI car
+    - Most of CarController.cs
+    - Whole of CarRotation.cs
+    - Whole of HealthBar.cs
+    - Whole of MakeObjectTransparent.cs
+    - Whole of OpenCloseRules.cs
+    - Whole of Speedometer.cs
  
