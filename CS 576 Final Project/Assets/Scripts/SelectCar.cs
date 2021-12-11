@@ -9,6 +9,6 @@ public class SelectCar : MonoBehaviour
     public void chooseCar(int carNum){
         // Store car choice in empty game object somewhere
 
-        SceneManager.LoadScene(3); // Load Stage Select Scene
+        SceneManager.LoadScene(2); // Load Stage Select Scene
     }
 }
