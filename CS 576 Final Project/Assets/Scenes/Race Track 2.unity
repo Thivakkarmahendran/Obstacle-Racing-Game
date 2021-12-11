@@ -16288,7 +16288,7 @@ MonoBehaviour:
   max_speed: 100
   inWindZone: 0
   windZone: {fileID: 0}
-  powerup: 1
+  powerup: 0
   slow: 0
   bigger: 0
   smaller: 0
