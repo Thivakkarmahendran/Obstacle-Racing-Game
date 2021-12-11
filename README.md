@@ -4,11 +4,11 @@ Members - Thivakkar Mahendran, Moses Reid, Chieh Min Chung
 # Goal of the Game
 
 # How to Play
-Up arrow - to go accelerate the car
-Down arrow - to go reverse 
-left/right arrow - to turn the car
-space bar - to brake the car
-escape key - to pause the game
+- Up arrow -> to go accelerate the car
+- Down arrow -> to go reverse 
+- left/right arrow -> to turn the car
+- space bar -> to brake the car
+- escape key -> to pause the game
 
 # Features
 - Main menu scene to start the game with instructions on how to play the game
@@ -23,6 +23,8 @@ escape key - to pause the game
     - Trees in the middle of the road making the car to drive carefully
     - wind zone which makes the car shift towards a random direction, possible for the car to fall of the map by the winds
     - Finish zone to check race completion
+        - Shows the completed time
+        - Saves the current times locally if it is the best time
     - Checkpoints through out the map to deter cheating and if the car falls of the map or gets damaged completely the car respwans from the last completed checkpoint
         - The player will get alerted if the player misses any checkpoints
     - Mystery boxes placed throughout the map to unlock special powers - selection of special power is random
@@ -32,5 +34,6 @@ escape key - to pause the game
         - Smaller -> makes the car get smaller for 5 seconds 
         - Max Health -> increases the health of the car to 100%
         - Stealth -> car can't get damages for 5 seconds
+    - Pause menu lets the player start, restart, or go to the main menu
 - AI car competes in the race track by autonomously driving through the map  
  
