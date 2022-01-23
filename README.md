@@ -65,4 +65,11 @@ Members - Thivakkar Mahendran, Moses Reid, Chieh Min Chung
     - Whole of MakeObjectTransparent.cs
     - Whole of OpenCloseRules.cs
     - Whole of Speedometer.cs
+
+# Notes
+- The lap is set to 1 for demo purposes, the game should be played at 3 laps which makes it harder since you have to try to be safe and not loose all your health
+- The swinging of the wrecking ball was turned off for demo purposes since my computer became really slow 
+- The speedometer was based on https://www.youtube.com/watch?v=3xSYkFdQiZ0
+- Mystery box animation was based on http://www.donovankeith.com/2016/05/making-objects-float-up-down-in-unity/
+- Path.cs and lines 20-28 of CarAi.cs was based from a tutorial
  
